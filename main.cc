@@ -19,12 +19,9 @@ std::bitset<32> generateRandomAddress() {
 int main(){
 	
 	Cache c;
-	//calculate();
-	std::bitset<32> temp; 
 	
-	for (int i = 0; i < 10; ++i) {
+	for (int i = 0; i < 1000; ++i) {
         std::bitset<32> address = generateRandomAddress();
-        temp = address;
         std::string data = std::to_string(i);
         std::cout << "Address " << i + 1 << ": " << address << std::endl;
         c.write(address, data);
@@ -32,12 +29,12 @@ int main(){
     	
     	//print the cache values.
     	//c.printStores();
-    	for (int i = 0; ; ) {
+    	for (int i = 0; i<1000000;i++ ) {
         std::bitset<32> address = generateRandomAddress();
         c.read(address);
         //td::cout << "Reading at Address " << i + 1 << ": " << address << std::endl;
         //std::cout << "Data at address " << address <<" is "<< c.read(address) <<std::endl;
     	}
-    	= address//std::cout << "Data at address " << temp <<" is "<< c.read(temp) <<std::endl;
+    	//std::cout << "Data at address " << temp <<" is "<< c.read(temp) <<std::endl;
     	return 0;
 }
