@@ -1,0 +1,3 @@
+/home/ffiroz/coding/build/CMakeFiles/cache_simulator.dir
+/home/ffiroz/coding/build/CMakeFiles/edit_cache.dir
+/home/ffiroz/coding/build/CMakeFiles/rebuild_cache.dir
